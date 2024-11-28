@@ -1,7 +1,7 @@
 import "./NewUserFrom.css";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
-function NewUserFrom({ addUser }) {
+function NewUserFrom({ addUser, close }) {
   const [users, setUsers] = useState({
     id: uuidv4(),
     image: "",
@@ -18,6 +18,7 @@ function NewUserFrom({ addUser }) {
   };
   return (
     <div className="newForm">
+      <div onClick={close} className="corr"></div>
       <div className="newFormCard">
         <h2 className="newuser">Create New User </h2>
         <form onSubmit={hendleSubmit}>

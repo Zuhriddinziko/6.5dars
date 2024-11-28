@@ -1,9 +1,9 @@
 import React from "react";
-import "./navbar.css";
-function navbar({ userLength }) {
+import "./Navbar.css";
+function Navbar({ userLength, close }) {
   return (
     <>
-      <div className="navbar">
+      <div onClick={close} className="navbar">
         <div className="navbar__container container">
           <h1 className="navbar_logo">CUser</h1>
           <h3 className="navbar__count">
@@ -15,4 +15,4 @@ function navbar({ userLength }) {
   );
 }
 
-export default navbar;
+export default Navbar;

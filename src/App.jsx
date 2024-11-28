@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
-import Navbar from "./componons/navbar/navbar";
-import Footer from "./componons/footer/footer";
+import Navbar from "./componons/navbar/Navbar";
+import Footer from "./componons/footer/Footer";
 import UserList from "./componons/userList/UserList";
 import NewUserFrom from "./newUserFrom/NewUserFrom";
+
 function App() {
   const [user, setUser] = useState([]);
   const [newUser, setNewUser] = useState(false);
@@ -26,20 +28,32 @@ function App() {
     return setNewUser(true);
   };
   const close = (e) => {
-    if (e.target.className === "user") setNewUser(false);
-    console.log(e);
+    if (e.target.className === "newForm") {
+      setNewUser(false);
+    }
+  };
+  const closes = () => {
+    return setNewUser(false);
   };
   return (
     <>
-      <div onClick={close} className="user">
-        <Navbar userLength={user.length} />
-        <main className="main">
-          <div className="mains">{user.length == 0 && <h2>No Users</h2>}</div>
-          <UserList user={user} deleteUser={deleteUser} />
-          <button onClick={goWent}>neW User</button>
-        </main>
+      <div className="user">
+        <Navbar close={closes} userLength={user.length} />
 
-        {newUser && <NewUserFrom addUser={addUser} />}
+        <main className="main">
+          <UserList user={user} deleteUser={deleteUser} />
+          {newUser && <NewUserFrom close={closes} addUser={addUser} />}
+          <div onClick={closes} className="no_user">
+            {user.length === 0 && (
+              <h2 onClick={closes} className="big">
+                No Users
+              </h2>
+            )}
+          </div>
+        </main>
+        <button onClick={goWent} className="btn">
+          neW User
+        </button>
         <Footer />
       </div>
     </>

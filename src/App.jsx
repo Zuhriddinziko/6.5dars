@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import Navbar from "./componons/navbar/Navbar";
-import Footer from "./componons/footer/Footer";
-import UserList from "./componons/userList/UserList";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import UserList from "./components/userList/UserList";
 import NewUserFrom from "./newUserFrom/NewUserFrom";
 
 function App() {

@@ -2,43 +2,38 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* padding: 20px; */
+    padding-right: 50px;
+    padding-left: 190px;
     gap: 15px;
-    /* margin-bottom: 100px; */
+
 }
 
 .card {
     text-align: center;
     box-shadow: 6px 7px 4px -1px rgba(97, 77, 16, 1);
-    width: 200px;
-    height: 320px;
-    background-color: rgb(101, 83, 26);
+    width: 250px;
+    height: 340px;
+    background-color: rgba(235, 188, 33, 0.814);
     border-radius: 5px;
     cursor: pointer;
     animation-fill-mode: both;
     transition: all 0.5s;
+    padding: 15px;
+    padding-top: 5px;
 
 }
 
 
-.card:hover {
-    box-shadow: 8px 9px 6px 1px rgb(32, 29, 21);
-    width: 200px;
-    height: 300px;
-    background-color: rgba(158, 26, 68, 0.818);
-    border-radius: 5px;
-    cursor: pointer;
-    animation-fill-mode: both;
-}
+
 
 img {
-    /* border-radius: 50%; */
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 50%;
+    height: 200px;
     width: 200px;
 }
 
 h3 {
+    padding-right: 10px;
     font-size: 18px;
     color: blanchedalmond;
     font-weight: 500;

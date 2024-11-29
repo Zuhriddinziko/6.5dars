@@ -45,6 +45,7 @@ function NewUserFrom({ addUser, close }) {
               }}
               className="texte"
               type="text"
+              required
             />
           </label>
           <label>
@@ -57,6 +58,7 @@ function NewUserFrom({ addUser, close }) {
               }}
               className="texte"
               type="text"
+              required
             />
           </label>
           <label>
@@ -69,6 +71,7 @@ function NewUserFrom({ addUser, close }) {
               }}
               className="texte"
               type="text"
+              required
             />
           </label>
           <label>
@@ -81,6 +84,7 @@ function NewUserFrom({ addUser, close }) {
               }}
               className="texte"
               type="number"
+              required
             />
           </label>
           <label>
@@ -93,6 +97,7 @@ function NewUserFrom({ addUser, close }) {
               }}
               className="texte"
               type="text"
+              required
             />
           </label>
           <div className="gender">
@@ -108,6 +113,7 @@ function NewUserFrom({ addUser, close }) {
                 type="radio"
                 name="gender"
                 value="male"
+                required
               />
             </label>
             <label className="male">

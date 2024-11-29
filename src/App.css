@@ -11,16 +11,12 @@ body {
 }
 
 .user {
-  height: 60hv;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
 }
 
 .main {
   padding-top: 80px;
   height: 600px;
-
   width: 100%
 }
 
@@ -37,7 +33,13 @@ body {
   user-select: none;
 }
 
-.btn {
+.btnn {
   width: 180px;
+  position: absolute;
   height: 35px;
+  position: fixed;
+  top: 68%;
+  border: none;
+  left: -75px;
+  transform: rotate(90deg);
 }

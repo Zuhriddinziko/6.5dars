@@ -1,25 +1,23 @@
 .newForm {
 
-    width: 90vw;
-    /* box-shadow: 6px 7px 4px -1px rgba(97, 77, 16, 1); */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.708);
+    padding-right: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    /* margin: 0 auto; */
-
 
 }
 
 .corr {
     width: 1000px;
     height: 500px;
-    /* background-color: red; */
 }
 
 .newFormCard {
-    /* margin-top: -180px; */
-    /* border: 2px solid blueviolet; */
     border-radius: 10px;
     background-color: rgb(42, 128, 165);
     padding: 20px;
@@ -47,7 +45,7 @@ span {
     height: 20px;
     border-radius: 3px;
     border: none;
-    /* background-color: rgba(165, 42, 42, 0.044); */
+
 }
 
 .male {

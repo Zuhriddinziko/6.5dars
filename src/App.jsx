@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./App.css";
 import Navbar from "./componons/navbar/Navbar";
 import Footer from "./componons/footer/Footer";
@@ -39,10 +38,10 @@ function App() {
     <>
       <div className="user">
         <Navbar close={closes} userLength={user.length} />
+        {newUser && <NewUserFrom close={closes} addUser={addUser} />}
 
         <main className="main">
           <UserList user={user} deleteUser={deleteUser} />
-          {newUser && <NewUserFrom close={closes} addUser={addUser} />}
           <div onClick={closes} className="no_user">
             {user.length === 0 && (
               <h2 onClick={closes} className="big">
@@ -51,7 +50,7 @@ function App() {
             )}
           </div>
         </main>
-        <button onClick={goWent} className="btn">
+        <button onClick={goWent} className="btnn">
           neW User
         </button>
         <Footer />

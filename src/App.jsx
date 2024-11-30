@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import UserList from "./components/userList/UserList";
-import NewUserFrom from "./newUserFrom/NewUserFrom";
+import Navbar from "./companents/navbar/Navbar";
+import Footer from "./companents/footer/Footer";
+import UserList from "./companents/userList/UserList";
+import NewUserFrom from "./companents/newUserFrom/NewUserFrom";
 
 function App() {
   const [user, setUser] = useState([]);
